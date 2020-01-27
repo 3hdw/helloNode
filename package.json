@@ -4,7 +4,7 @@
   "description": "hello world",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --delay 0.3 bin/dev",
+    "start": "nodemon --delay 0.6 bin/dev",
     "clean": "if exist dist rmdir dist /q /s",
     "build": "npm run clean && mkdir dist && babel src -s -d dist",
     "prod": "npm run build && node bin/prod",
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^17.1.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
